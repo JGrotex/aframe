@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Components Showcase UI</title>
+    <meta name="description" content="Components Showcase UI — A-Frame">
+    <link rel="stylesheet" type="text/css" href="css/gostyle.css">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
+	<!-- Component loader area -->
+    <script src="js/components/clock-component.js"></script>
+    <script src="js/components/weather-component.js"></script>
+	
+    <style>
+      a-scene {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- HTML area -->
+
+    <!-- 3D area-->
+    <a-scene embedded vr-mode-ui="enabled: true;" renderer="colorManagement: true;" inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
+       
+      <a-entity camera look-controls="enabled:true" wasd-controls="acceleration:100; enabled:true" position="0 0 0" rotation="0 0 0"></a-entity>
+
+      <!-- preloader -->
+      <a-assets>
+        <a-asset-item id="clear" src="glb/weather/clear.glb"></a-asset-item>
+        <a-asset-item id="pcloudy" src="glb/weather/pcloudy.glb"></a-asset-item>
+        <a-asset-item id="mcloudy" src="glb/weather/mcloudy.glb"></a-asset-item>
+        <a-asset-item id="cloudy" src="glb/weather/cloudy.glb"></a-asset-item>
+        <a-asset-item id="humid" src="glb/weather/humid.glb"></a-asset-item>
+        <a-asset-item id="lightrain" src="glb/weather/lightrain.glb"></a-asset-item>
+        <a-asset-item id="oshower" src="glb/weather/oshower.glb"></a-asset-item>
+        <a-asset-item id="ishower" src="glb/weather/ishower.glb"></a-asset-item>
+        <a-asset-item id="lightsnow" src="glb/weather/lightsnow.glb"></a-asset-item>
+        <a-asset-item id="rain" src="glb/weather/rain.glb"></a-asset-item>
+        <a-asset-item id="snow" src="glb/weather/snow.glb"></a-asset-item>
+        <a-asset-item id="rainsnow" src="glb/weather/rainsnow.glb"></a-asset-item>
+        <a-asset-item id="ts" src="glb/weather/ts.glb"></a-asset-item>
+        <a-asset-item id="tsrain" src="glb/weather/tsrain.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- Clock showcase -->
+      <a-entity clock-component="local:en-US" position="-2.2 1 -1.5"></a-entity>
+
+      <!-- Weather showcase -->
+      <a-entity weather-component="" position="-4 -0.4 -5"></a-entity>
+
+      <!-- Test Weather Icons >
+      <a-entity gltf-model="#clear" position="-6 -2 -5"></a-entity>
+      <a-entity gltf-model="#pcloudy" position="-5 -2 -5"></a-entity>
+      <a-entity gltf-model="#mcloudy" position="-4 -2 -5"></a-entity>
+      <a-entity gltf-model="#cloudy" position="-3 -2 -5"></a-entity>
+      <a-entity gltf-model="#humid" position="-2 -2 -5"></a-entity>
+      <a-entity gltf-model="#lightrain" position="-1 -2 -5"></a-entity>
+      <a-entity gltf-model="#oshower" position="-0 -2 -5"></a-entity>
+      <a-entity gltf-model="#ishower" position="1 -2 -5"></a-entity>
+      <a-entity gltf-model="#lightsnow" position="2 -2 -5"></a-entity>
+      <a-entity gltf-model="#rain" position="3 -2 -5"></a-entity>
+      <a-entity gltf-model="#snow" position="4 -2 -5"></a-entity>
+      <a-entity gltf-model="#rainsnow" position="5 -2 -5"></a-entity>
+      <a-entity gltf-model="#ts" position="6 -2 -5"></a-entity>
+      <a-entity gltf-model="#tsrain" position="7 -2 -5"></a-entity>
+      -->
+      
+      <!-- Lights -->
+      <a-entity light="type: ambient; intensity: 0.3;" position="0 3 0"></a-entity>
+      <a-entity light="type: directional;
+                      castShadow: true;
+                      intensity: 0.4;
+                      shadowCameraVisible: false;"
+              position="0.5 4 1.2">
+      </a-entity>
+
+      <!-- allows to check function in any OS browser -->
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" ></a-entity> <!-- optional: debug-cursor-->
+
+      <!-- environment -->
+      <a-sky id="bg" transparent="true" opacity="0"></a-sky>
+      <!--a-plane src="#groundTexture" rotation="-90 0 0" width="50" height="50"></a-plane -->
+ 
+      <!-- animated boxes -->
+      <a-box animation="property: object3D.position.x; to: 25; dur: 40000; loop: true" position="-25 12 -16" color="white" opacity="0.25" width="2" depth="1" height="0.6" material="" geometry="box"></a-box>
+      <a-box animation="property: object3D.position.x; to: 25; dur: 24000; loop: true" position="-25 8 -16" color="white" opacity="0.25" width="2" depth="1" height="0.6" material="" geometry="box"></a-box>
+      <a-box animation="property: object3D.position.x; to: 25; dur: 28000; loop: true" position="-25 2 -16" color="white" opacity="0.25" width="2" depth="1" height="0.6" material="" geometry="box"></a-box>
+      <a-box animation="property: object3D.position.x; to: 25; dur: 30000; loop: true" position="-25 -2 -16" color="white" opacity="0.25" width="2" depth="1" height="0.6" material="" geometry="box"></a-box>
+      <a-box animation="property: object3D.position.x; to: 25; dur: 42000; loop: true" position="-26 -8 -16" color="white" opacity="0.25" width="2" depth="1" height="0.6" material="" geometry="box"></a-box>
+
+    </a-scene>
+	
+  </body>
+</html>

@@ -1,0 +1,94 @@
+
+
+      body {
+        background: #000;
+        
+        color: aliceblue;
+        font-family: "Gotham SSm A","Gotham Ssm B",Verdana,Geneva,sans-serif;
+        padding-left: 56px;
+      }
+
+      .above {
+        z-index: 1;
+        background-color: #000;
+        color: #333;
+        position: absolute;
+        left: 100px;
+        top: 800px;
+        height: 42px;
+        width: 42px;
+        padding: 2px;
+      }
+
+      .above2 {
+        z-index: 1;
+        background-color: #0e4f9e;
+        position: absolute;
+        left: 100px;
+        top: 400px;
+      }
+
+      .alternativeNav {
+          position: absolute;
+          overflow-x: clip;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          margin: 0px;
+          padding: 0px;
+          left: 0px;
+          top: 0px;
+          height: 38px;
+          width: 100%;
+      }
+      .logo-holder {
+        position: absolute;
+        top: 0px;
+        padding: 8px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: "Gotham SSm A","Gotham Ssm B",Verdana,Geneva,sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .txt-holder {
+        position: absolute;
+        left: 130px;
+        top: 0px;
+        padding: 8px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: "Gotham SSm A","Gotham Ssm B",Verdana,Geneva,sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      h1 {
+        font-weight: 900;
+        font-family: "Gotham A","Gotham B",Verdana,Geneva,sans-serif;
+        letter-spacing: .025rem;
+        font-size: 61px!important;
+        line-height: 1.16;
+        margin-bottom: 24px;
+        text-shadow: 0 0 6px rgb(51 51 51 / 23%);
+      }
+      h2 {
+        font-size: 11px;
+        color: #676767;
+        text-transform: uppercase;
+        letter-spacing: .77px;
+      }
+      .footer {
+        position: absolute;
+        background-color: #333;
+        top:100%;
+        left: 0px;
+        height: 38px;
+        width: 100%;
+      }
+      .footer-txt {
+        padding: 4px;
+        margin: 4px;
+        vertical-align: -webkit-baseline-middle;
+      }
