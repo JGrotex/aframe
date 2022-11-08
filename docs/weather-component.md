@@ -28,3 +28,5 @@ following REST API call is executed all ~30 minutes to refresh the weather statu
 Sample Result:
 
         { "product" : "civillight" , "init" : "2022110800" , "dataseries" : [ { "date" : 20221108, "weather" : "cloudy", "temp2m" : { "max" : 14, "min" : 8 }, "wind10m_max" : 3 }, { "date" : 20221109, "weather" : "cloudy", "temp2m" : { "max" : 14, "min" : 10 }, "wind10m_max" : 3 }, { "date" : 20221110, "weather" : "mcloudy", "temp2m" : { "max" : 11, "min" : 7 }, "wind10m_max" : 3 }, { "date" : 20221111, "weather" : "cloudy", "temp2m" : { "max" : 13, "min" : 7 }, "wind10m_max" : 3 }, { "date" : 20221112, "weather" : "cloudy", "temp2m" : { "max" : 13, "min" : 7 }, "wind10m_max" : 2 }, { "date" : 20221113, "weather" : "cloudy", "temp2m" : { "max" : 12, "min" : 6 }, "wind10m_max" : 2 }, { "date" : 20221114, "weather" : "mcloudy", "temp2m" : { "max" : 12, "min" : 5 }, "wind10m_max" : 2 } ] }
+
+> full 7timer API Docs here: https://github.com/Yeqzids/7timer-issues/wiki/Wiki#civil-and-civil-light 
