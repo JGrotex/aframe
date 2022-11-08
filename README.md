@@ -10,9 +10,18 @@ Component showcase animation gif.
 ## Components
 
 ### Clock Component
-TBD ...
+Simple Clock object with time and date, using local settings for time and date strings
+
+![](docs/img/clock-component.png)
+
+[more Details here](docs/clock-component.md)
 
 ### Weather Component
-TBD ...
+Local Weather display based on GPS longitude and latitude using a free service API from https://www.7timer.info
 
-> soon more here ...
+![](docs/img/weather-component.png)
+
+[more Details here](docs/weather-component.md)
+
+### more Components
+soon more here ...
