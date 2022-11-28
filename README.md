@@ -23,5 +23,8 @@ Local Weather display based on GPS longitude and latitude using a free service A
 
 [more Details here](docs/weather-component.md)
 
+### Crypto Currency Component
+coming soon!
+
 ### more Components
 soon more here ...
