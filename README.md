@@ -10,7 +10,7 @@ Component showcase animation gif.
 ## Components
 
 ### Clock Component
-Simple Clock object with time and date, using local settings for time and date strings
+Simple Clock object with time and date, using local settings for time and date strings.
 
 ![](docs/img/clock-component.png)
 
@@ -24,7 +24,7 @@ Local Weather display based on GPS longitude and latitude using a free service A
 [more Details here](docs/weather-component.md)
 
 ### Crypto Currency Component
-Displays currenet Crypto Currency exchange rates using a free service API from https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-exchange-rates#http-request
+Displays currenet Crypto Currency exchange rates using a free service API from Coinbase.
 
 ![](docs/img/crypto-info-component.png)
 
