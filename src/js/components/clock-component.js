@@ -5,13 +5,11 @@ AFRAME.registerComponent('clock-component',{
 
     init: function(){
 
-      var el = this.el;
-      var data = this.data;
-
       this.createComponent();
       
     },
 
+    // *** render Component
     createComponent: function(){
 
         this.timeEl = document.createElement('a-text');
@@ -30,6 +28,7 @@ AFRAME.registerComponent('clock-component',{
 
     },
 
+    // *** TICKS
     tick: function(){
 
       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

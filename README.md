@@ -24,7 +24,11 @@ Local Weather display based on GPS longitude and latitude using a free service A
 [more Details here](docs/weather-component.md)
 
 ### Crypto Currency Component
-coming soon!
+Displays currenet Crypto Currency exchange rates using a free service API from https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-exchange-rates#http-request
+
+![](docs/img/crypto-info-component.png)
+
+[more Details here](docs/crypto-info-component.md)
 
 ### more Components
 soon more here ...

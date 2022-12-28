@@ -10,6 +10,7 @@
 	<!-- Component loader area -->
     <script src="js/components/clock-component.js"></script>
     <script src="js/components/weather-component.js"></script>
+	<script src="js/components/crypto-info-component.js"></script>
 	
     <style>
       a-scene {
@@ -70,6 +71,9 @@
       <a-entity gltf-model="#ts" position="6 -2 -5"></a-entity>
       <a-entity gltf-model="#tsrain" position="7 -2 -5"></a-entity>
       -->
+	  
+	    <!-- Crypto Currency Info showcase -->
+      <a-entity crypto-info-component="currency:EUR" position="4 -2 -5"></a-entity>
       
       <!-- Lights -->
       <a-entity light="type: ambient; intensity: 0.3;" position="0 3 0"></a-entity>

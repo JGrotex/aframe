@@ -5,12 +5,6 @@ AFRAME.registerComponent('weather-component',{
       },
     init: function(){
 
-      var el = this.el;
-      var data = this.data;
-      //console.log("weather-component loaded!");
-      //console.log(data); //data.field
-      //console.log(el);
-
       this.currentTimestamp = new Date().getMinutes();
 
       this.createComponent();
@@ -18,6 +12,7 @@ AFRAME.registerComponent('weather-component',{
       
     },
 
+    // *** render Component
     createComponent: function () {
             
       this.lastupdate = document.createElement('a-text');
@@ -41,6 +36,7 @@ AFRAME.registerComponent('weather-component',{
 
     },
 
+    // *** update Details
     showWeather: function(dataseries) {
 
         var weathercontainer=this.weathercontainer;
@@ -100,6 +96,8 @@ AFRAME.registerComponent('weather-component',{
         this.textEl_Status.setAttribute('text',{ color: '#fff', align: 'left', width: "4", value: "", opacity:'0.5'});
         this.lastupdate.setAttribute('text',{ color: '#fff', align: 'left', width: "3", value: "Status update: " + new Date().toLocaleTimeString(), opacity:'0.8'});
     },
+
+    // *** load Details
     getWeatherREST: function() {
       // get weather data via REST
       // //https://www.7timer.info/bin/api.pl?lon=7.318&lat=51.819&product=civillight&output=json
@@ -117,8 +115,8 @@ AFRAME.registerComponent('weather-component',{
         .catch(error => console.log('error', error));
     },
 
+    // *** TICKS
     tick: function() {
-      
       var newTimestamp = new Date().getMinutes();
       difference = Math.abs(this.currentTimestamp - newTimestamp);
 
@@ -126,10 +124,10 @@ AFRAME.registerComponent('weather-component',{
         this.currentTimestamp= new Date().getMinutes();
         this.getWeatherREST();
       }
-      
     }
   });
 
+// *** common Helpers
 function formatDate8digit(x) {
     var day = x % 100;
     var month = Math.floor(x % 10000 / 100);
