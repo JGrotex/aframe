@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>magicVideo</title>
+<meta name="description" content="magicVideo - A-Frame">
+<script src="https://aframe.io/aframe/dist/aframe-master.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-scene>
+  <a-assets>
+    <video id="360" autoplay loop="true" src="360.mp4"> </video>
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-videosphere src="#360"></a-videosphere>
+
+  <a-text font="kelsonsans" value="GOdev magicVideo" width="3" position="-2.5 0.25 -2.5" rotation="-90 0 0"></a-text>
+</a-scene>
+</body>
+</html>

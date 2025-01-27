@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>magicVideo</title>
+<meta name="description" content="magicVideo - A-Frame">
+<script src="https://aframe.io/aframe/dist/aframe-master.min.js"></script>
+</head>
+<body>
+    <script src="arrow-key-rotation.js"></script>
+    <script src="play-on-window-click.js"></script>
+    <script src="play-on-vrdisplayactivate-or-enter-vr.js"></script>
+    <script src="hide-once-playing.js"></script>
+
+<a-scene>
+<a-scene>
+  <a-assets>
+    <video id="360" autoplay loop="true" src="360.mp4"> </video>
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-videosphere src="#360"
+				play-on-window-click
+				play-on-vrdisplayactivate-or-enter-vr
+  ></a-videosphere>
+  
+  <a-camera user-height="0" wasd-controls-enabled="false" arrow-key-rotation>
+        <!-- Text element for display messaging.  Hide once video is playing. -->
+        <a-entity id="msg" position="0 -0.3 -1.5" text="align:center; 
+                width:3;
+                wrapCount:100;
+                color:red;
+                value:Click window to make the video play, if needed."
+                hide-once-playing="#360">
+        </a-entity>
+  </a-camera>
+
+  <a-text font="kelsonsans" value="GOdev magicVideo" width="3" position="-2.5 0.25 -2.5" rotation="-90 0 0"></a-text>
+</a-scene>
+
+<script>
+document.querySelector("#360").components.material.material.map.image.play();
+</script>
+
+</body>
+</html>
